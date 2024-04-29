@@ -1,0 +1,48 @@
+.offers {
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+  column-gap: 100px;
+  row-gap: 50px;
+  .list-reset();
+
+  padding-bottom: 80px;
+}
+
+.offers__item {
+  padding-top: 154px;
+  width: 300px;
+  background-size: 300px 146px;
+  background-position: top center;
+  background-repeat: no-repeat;
+
+  &--websites {
+    background-image: url("../images/decarative/main-websites.jpg");
+  }
+
+  &--applications {
+    background-image: url("../images/decarative/main-applications.jpg");
+  }
+
+  &--presentations {
+    background-image: url("../images/decarative/main-presentations.jpg");
+  }
+}
+
+.offers__title {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 30px;
+  color: @color-black;
+  text-transform: uppercase;
+}
+
+.offers__description {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.offers__button {
+  margin-top: 17px;
+}

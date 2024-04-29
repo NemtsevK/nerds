@@ -1,0 +1,29 @@
+.sort-type {
+  display: flex;
+  flex-wrap: wrap;
+  .list-reset();
+
+  width: 300px;
+}
+
+.sort-type__item {
+  margin-right: 25px;
+}
+
+.sort-type__link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: fade(@color-black, 30%);
+  transition: color 0.3s linear;
+
+  &:active,
+  &--active {
+    color: @color-black;
+  }
+
+  &:hover:not(&--active) {
+    color: fade(@color-black, 60%);
+  }
+}

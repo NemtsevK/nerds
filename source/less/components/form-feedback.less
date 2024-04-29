@@ -1,0 +1,28 @@
+.form-feedback__content-wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 360px);
+  column-gap: 40px;
+  row-gap: 34px;
+  margin-bottom: 48px;
+}
+
+.form-feedback__label {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+  color: @color-black;
+}
+
+.form-feedback__label-textarea {
+  grid-column: ~"1 / -1";
+}
+
+.form-feedback__input {
+  margin-top: 10px;
+}
+
+.form-feedback__button {
+  padding: 16px 84px;
+}

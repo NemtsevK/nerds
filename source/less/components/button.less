@@ -1,0 +1,70 @@
+.button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 40px;
+  border: none;
+  border-radius: 3px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  color: @color-white;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s ease-in;
+
+  &:active {
+    color: fade(@color-white, 30%);
+    box-shadow: inset 0 3px 0 fade(@color-black, 10%);
+  }
+
+  &--red {
+    background-color: @color-red-light;
+
+    &:hover {
+      background-color: @color-red;
+    }
+
+    &:active {
+      background-color: @color-red-dark;
+    }
+  }
+
+  &--green {
+    background-color: @color-green-light;
+
+    &:hover {
+      background-color: @color-green;
+    }
+
+    &:active {
+      background-color: @color-green-dark;
+    }
+  }
+
+  &--yellow {
+    background-color: @color-yellow-light;
+
+    &:hover {
+      background-color: @color-yellow;
+    }
+
+    &:active {
+      background-color: @color-yellow-dark;
+    }
+  }
+
+  &--gray {
+    color: @color-black;
+    background-color: @color-gray;
+
+    &:hover {
+      background-color: @color-gray-light;
+    }
+
+    &:active {
+      color: fade(@color-black, 30%);
+      background-color: @color-gray-lighten;
+    }
+  }
+}

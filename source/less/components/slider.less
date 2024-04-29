@@ -1,0 +1,31 @@
+.slider {
+  position: relative;
+  background-color: @color-gray;
+}
+
+.slider__list {
+  display: grid;
+  .list-reset();
+}
+
+.slider__list-item {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  visibility: hidden;
+
+  &--current {
+    animation: fade-in 1.5s ease-in-out forwards;
+  }
+
+  &--hidden {
+    animation: fade-out 1.5s ease-in-out forwards;
+  }
+}
+
+.slider__controls {
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  bottom: 96px;
+  transform: translateX(-50%);
+}

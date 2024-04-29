@@ -1,0 +1,32 @@
+.social-links {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 80px);
+  column-gap: 10px;
+  row-gap: 10px;
+  .list-reset();
+}
+
+.social-links__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  color: currentColor;
+  background-color: @color-gray-88;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    background-color: @color-red;
+  }
+
+  &:active {
+    background-color: @color-red-dark;
+    box-shadow: 0 3px 0 fade(@color-black, 10%) inset;
+  }
+
+  &:active .social-links__icon {
+    fill-opacity: 0.3;
+  }
+}
