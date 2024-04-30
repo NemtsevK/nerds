@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import plumber from 'gulp-plumber';
 import less from 'gulp-less';
 import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
@@ -15,8 +14,7 @@ import replace from 'gulp-replace';
 import {stacksvg} from 'gulp-stacksvg';
 
 export const styles = () => {
-  return gulp.src('source/sass/style.scss', {sourcemaps: true})
-    .pipe(plumber())
+  return gulp.src('source/less/style.less', {sourcemaps: true})
     .pipe(less())
     .pipe(postcss([
       autoprefixer(),
