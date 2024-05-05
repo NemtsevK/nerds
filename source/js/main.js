@@ -1,7 +1,7 @@
-import Slider from './modules/slider';
-import Modal from './modules/modal';
-import Map from './modules/map';
-import { URL_MAP } from './const';
+import Slider from './slider.js';
+import Modal from './modal.js';
+import Map from './map.js';
+import { URL_MAP } from './const.js';
 
 const sliderElement = document.querySelector('.slider');
 const modalFormElement = document.querySelector('.modal-form');

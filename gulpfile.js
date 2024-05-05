@@ -28,6 +28,7 @@ export const styles = () => {
 const scripts = () => {
   return gulp.src('source/js/*.js')
     .pipe(terser())
+    .pipe(replace('.js', '.min.js'))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('build/js'))
     .pipe(browser.stream());
@@ -105,7 +106,7 @@ const reload = (done) => {
 };
 
 const watcher = () => {
-  gulp.watch('source/sass/**/*.scss', gulp.series(styles));
+  gulp.watch('source/less/**/*.less', gulp.series(styles));
   gulp.watch('source/js/*.js', gulp.series(scripts));
   gulp.watch('source/*.html', gulp.series(html, reload));
   gulp.watch(
