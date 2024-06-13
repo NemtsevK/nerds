@@ -4,32 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Нёрдс. Страница не найдена</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple.png">
-  <link rel="manifest" href="manifest.webmanifest">
-  <link rel="preload" href="fonts/roboto-regular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-medium.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="preload" href="fonts/roboto-bold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
-  <link rel="stylesheet" href="css/style.css">
+  {% include 'templates/_head.html' %}
 </head>
 <body class="page__body">
-<header class="header">
-  <div class="content-wrapper">
-    <nav class="nav">
-      <a class="header-logo" href="index.html">
-        <img class="header-logo__image" src="images/brand/logo.svg" alt="Логотип дизайн-студии «Нёрдс»" width="160" height="65">
-      </a>
-      <ul class="nav__list">
-        <li class="nav__item"><a class="nav__link" href="blank.html">Студия</a></li>
-        <li class="nav__item"><a class="nav__link" href="blank.html">Клиенты</a></li>
-        <li class="nav__item"><a class="nav__link" href="catalog.html">Магазин</a></li>
-        <li class="nav__item"><a class="nav__link" href="blank.html">Контакты</a></li>
-      </ul>
-      <div class="nav__user"><a class="nav__link nav__link--icon nav__link--icon-cart" href="blank.html">Корзина</a></div>
-    </nav>
-  </div>
-</header>
+{% include 'templates/_header.html' %}
 <main class="page-main">
   <h1 class="visually-hidden">Нёрдс</h1>
   <section class="not-found">
@@ -37,37 +15,8 @@
     <h2 class="not-found__title title-h2">Страница не найдена</h2>
   </section>
 </main>
-<footer class="footer">
-  <div class="footer__social content-wrapper">
-    <ul class="social-links">
-      <li class="social-links__item">
-        <a class="social-links__link" href="https://vk.com" aria-label="Мы в ВКонтакте">
-          <svg class="social-links__icon" width="26" height="15">
-            <use xlink:href="images/sprite.svg#vk"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-links__item">
-        <a class="social-links__link" href="https://www.facebook.com" aria-label="Мы в Facebook">
-          <svg class="social-links__icon" width="12" height="22">
-            <use xlink:href="images/sprite.svg#fb"></use>
-          </svg>
-        </a>
-      </li>
-      <li class="social-links__item">
-        <a class="social-links__link" href="https://www.instagram.com" aria-label="Мы в Instagram">
-          <svg class="social-links__icon" width="21" height="21">
-            <use xlink:href="images/sprite.svg#insta"></use>
-          </svg>
-        </a>
-      </li>
-    </ul>
-    <div class="social-offering">
-      <p class="social-offering__title">Давайте дружить, это выгодно!</p>
-      <p class="social-offering__text">Скидка 10% для друзей из социальных сетей.</p>
-    </div>
-  </div>
-</footer>
-<script src="js/main.js"></script>
+{% include 'templates/_footer.html' %}
+{% include 'templates/_modal.html' %}
+<script src="js/main.js" type="module"></script>
 </body>
 </html>
