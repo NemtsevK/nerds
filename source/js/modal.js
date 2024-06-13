@@ -17,8 +17,8 @@ export default class Modal {
     document.removeEventListener('keydown', this._onEscKeyDown);
   }
 
-  _onEscKeyDown(evt) {
-    const isEscKey = evt.key === 'Escape' || evt.key === 'Esc';
+  _onEscKeyDown(event) {
+    const isEscKey = event.key === 'Escape' || event.key === 'Esc';
 
     if (isEscKey) {
       this._hide();

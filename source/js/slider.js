@@ -25,11 +25,11 @@ export default class Slider {
     return element.classList.contains(`${this._slideClassName}--current`);
   }
 
-  _onSliderControlsClick(evt) {
-    const element = evt.target;
+  _onSliderControlsClick(event) {
+    const element = event.target;
 
     if (element.classList.contains(this._controlsButtonClassName)) {
-      evt.preventDefault();
+      event.preventDefault();
 
       this._currentControlsButton = this._controlsButtons.find(this._findCurrentButton);
       this._nextControlsButton = element;

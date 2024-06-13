@@ -12,11 +12,13 @@ if (sliderElement) {
   new Slider(sliderElement, 'slider__list-item', 'slider-controls').init();
 }
 
+console.log('hello');
+
 if (modalFormElement) {
   const modalForm = new Modal(modalFormElement);
-
-  contactsButtonElement.addEventListener('click', (evt) => {
-    evt.preventDefault();
+  console.log('hello');
+  contactsButtonElement.addEventListener('click', (event) => {
+    event.preventDefault();
 
     modalForm.show();
   });
