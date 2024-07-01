@@ -11,6 +11,7 @@
   justify-content: center;
   align-items: center;
   .list-reset();
+
   width: 760px;
 }
 
@@ -27,11 +28,11 @@
   text-transform: uppercase;
   transition: color 0.3s linear;
 
-  &:not(&--current):hover {
+  &:not(.nav__link--current):hover {
     color: @color-red-light;
   }
 
-  &:not(&--current):active {
+  &:not(.nav__link--current):active {
     color: fade(@color-black, 30%);
   }
 
