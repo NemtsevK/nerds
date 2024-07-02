@@ -51,7 +51,7 @@
     "source/**/*.html",
     "source/js/**/*.js",
     "source/images/**/*.svg",
-    "source/sass/**/*.scss"
+    "source/less/**/*.less"
   ],
   "engines": {
     "node": "^20.14.0",
