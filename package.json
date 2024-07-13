@@ -1,9 +1,9 @@
 {
   "name": "nerds",
-  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/nemtsev-k)",
+  "author": "Nemtsev Konstantin <nemtsevk@hotmail.com> (https://github.com/NemtsevK)",
   "description": "Личный проект «Нёрдс»",
-  "homepage": "https://nemtsev-k.github.io/nerds/",
-  "repository": "https://github.com/nemtsev-k/nerds",
+  "homepage": "https://nemtsevk.github.io/nerds/",
+  "repository": "https://github.com/NemtsevK/nerds",
   "private": true,
   "type": "module",
   "devDependencies": {
@@ -54,7 +54,7 @@
     "source/less/**/*.less"
   ],
   "engines": {
-    "node": "^20.14.0",
-    "npm": "^10.7.0"
+    "node": "^20.15.1",
+    "npm": "^10.8.2"
   }
 }
